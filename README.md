@@ -21,13 +21,13 @@ This is intended to be a replacement for react-native-markdown-renderer, with a 
 #### Yarn
 
 ```npm
-yarn add react-native-markdown-display
+yarn add https://github.com/IronTony/react-native-markdown-display
 ```
 
 #### NPM
 
 ```npm
-npm install -S react-native-markdown-display
+npm install -S https://github.com/IronTony/react-native-markdown-display
 ```
 
 ### Get Started
