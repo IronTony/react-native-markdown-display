@@ -299,9 +299,19 @@ const renderRules = {
 
   // Text Output
   text: (node, children, parent, styles, inheritedStyles = {}) => (
-    <Text key={node.key} style={[inheritedStyles, styles.text]}>
-      {node.content}
-    </Text>
+    <>
+    {
+      node.content && node.content.startsWith('++') && node.content.endsWith('++') ? (
+        <Text key={node.key} style={[inheritedStyles, styles.underline]}>
+          {node.content.replace(/[+]/g, '')}
+        </Text>
+      ) : (
+        <Text key={node.key} style={[inheritedStyles, styles.text]}>
+          {node.content}
+        </Text>
+      )
+    }
+    </>
   ),
   textgroup: (node, children, parent, styles) => (
     <Text key={node.key} style={styles.textgroup}>

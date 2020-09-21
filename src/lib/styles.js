@@ -201,6 +201,9 @@ export const styles = {
     height: 1,
   },
   softbreak: {},
+  underline: {
+    textDecorationLine: 'underline',
+  },
 
   // Believe these are never used but retained for completeness
   pre: {},
